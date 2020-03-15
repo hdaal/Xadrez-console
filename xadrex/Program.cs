@@ -1,5 +1,5 @@
 ﻿using System;
-using Tabuleiro;
+using tabuleiro;
 
 namespace xadrex
 {
@@ -7,11 +7,13 @@ namespace xadrex
     {
         static void Main(string[] args)
         {
-            Posicao P;
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
-            P = new Posicao(3, 4);
+            Tela.imprimirTabuleiro(tab);
 
-            Console.WriteLine(P);
+            Console.ReadLine();
+
+
         }
     }
 }
